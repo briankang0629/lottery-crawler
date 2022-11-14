@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "downlevelIteration": true,
+    "noImplicitAny": false,
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "outDir": "./dist", //完成編譯後生成 js 文件的路徑
+    "rootDir": "./"  //代表 ts 文件的入口路徑
+  },
+  "include": [
+    "*.ts",
+  ],          // 納入編譯範圍
+  "exclude": ["node_modules", "dist"]  //不納入編譯範圍
+}
