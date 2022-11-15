@@ -9,9 +9,14 @@ app.get('/', (req, res) => {
     res.send('Welcome!');
 })
 
-const Lottery = require('./routes/lottery')
+// 539
+const FiveThreeNine = require('./routes/FiveThreeNine');
 
-app.use('/lottery', Lottery)
+// 大樂透
+const TaiwanBigLottery = require('./routes/TaiwanBigLottery');
+
+app.use('/lottery/539', FiveThreeNine)
+app.use('/lottery/taiwan_big_lottery', TaiwanBigLottery)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
