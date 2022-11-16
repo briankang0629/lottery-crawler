@@ -15,8 +15,12 @@ const FiveThreeNine = require('./routes/FiveThreeNine');
 // 大樂透
 const TaiwanBigLottery = require('./routes/TaiwanBigLottery');
 
+// 威力彩
+const PowerLottery = require('./routes/PowerLottery');
+
 app.use('/lottery/539', FiveThreeNine)
 app.use('/lottery/taiwan_big_lottery', TaiwanBigLottery)
+app.use('/lottery/power_lottery', PowerLottery)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
